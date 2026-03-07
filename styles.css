@@ -1,0 +1,77 @@
+/* === ESTILOS GENERALES === */
+
+/* body = todo el contenido visible de la pagina */
+body {
+    background-color: #ffffff;       /* fondo blanco */
+    font-family: "Courier New", monospace;  /* fuente monoespaciada */
+    color: #1a1a1a;                  /* texto casi negro (mas suave que negro puro) */
+    max-width: 700px;                /* ancho maximo del contenido */
+    margin: 0 auto;                  /* centrar el contenido horizontalmente */
+    padding: 40px 20px;              /* espacio interno: arriba/abajo 40px, lados 20px */
+    line-height: 1.6;                /* espacio entre lineas (legibilidad) */
+}
+
+/* === NAVEGACION === */
+
+nav {
+    margin-bottom: 40px;             /* espacio entre nav y contenido */
+}
+
+nav a {
+    margin-right: 16px;              /* espacio entre cada link */
+    text-decoration: none;           /* sin subrayado para que se vea mas limpio */
+}
+
+nav a:hover {
+    text-decoration: underline;      /* subrayado al pasar el mouse (feedback visual) */
+}
+
+/* === TITULOS === */
+
+h1 {
+    font-size: 1.8rem;              /* rem = relativo al tamano base del navegador */
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 40px;               /* espacio arriba de cada seccion */
+}
+
+/* === PARRAFOS === */
+
+p {
+    margin-bottom: 16px;
+}
+
+/* === LINKS === */
+
+a {
+    color: #1a1a1a;                  /* mismo color que el texto */
+    text-decoration: underline;      /* subrayado para que se note que es link */
+}
+
+/* === ARTICULOS (blog y portafolio) === */
+
+article {
+    margin-bottom: 40px;             /* espacio entre articulos */
+    padding-bottom: 24px;            /* espacio interno abajo */
+    border-bottom: 1px solid #e0e0e0; /* linea sutil de separacion */
+}
+
+time {
+    font-size: 0.85rem;              /* texto mas chico para la fecha */
+    color: #666666;                  /* gris para que no compita con el titulo */
+    display: block;                  /* que ocupe su propia linea */
+    margin-bottom: 12px;
+}
+
+/* === LISTAS === */
+
+ul {
+    padding-left: 20px;             /* indentacion de la lista */
+}
+
+li {
+    margin-bottom: 8px;
+}
