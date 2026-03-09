@@ -76,3 +76,34 @@ ul {
 li {
     margin-bottom: 8px;
 }
+
+/* === RESPONSIVE: PANTALLAS CHICAS === */
+
+/* Estos estilos solo aplican cuando el ancho de pantalla es menor a 600px (celulares) */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 16px;             /* menos espacio en pantalla chica */
+    }
+
+    h1 {
+        font-size: 1.4rem;              /* titulo mas chico para que no se corte */
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        margin-top: 28px;
+    }
+
+    /* nav pasa de fila a columna para que los links no queden apretados */
+    nav {
+        display: flex;
+        flex-direction: column;          /* los links van uno debajo del otro */
+        gap: 8px;                        /* espacio entre cada link */
+        margin-bottom: 28px;
+    }
+
+    nav a {
+        margin-right: 0;                /* ya no necesita margen lateral */
+    }
+}
