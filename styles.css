@@ -3,7 +3,7 @@
 /* body = todo el contenido visible de la pagina */
 body {
     background-color: #ffffff;       /* fondo blanco */
-    font-family: "Courier New", monospace;  /* fuente monoespaciada */
+    font-family: "JetBrains Mono", monospace;  /* fuente monoespaciada */
     color: #1a1a1a;                  /* texto casi negro (mas suave que negro puro) */
     max-width: 700px;                /* ancho maximo del contenido */
     margin: 0 auto;                  /* centrar el contenido horizontalmente */
