@@ -18,24 +18,29 @@
 - Sitio publicado en https://mxgsr.github.io
 
 ### Fase 5 - Tipografia y diseno
-- Google Fonts (JetBrains Mono) agregado a todas las paginas
 - Footer unificado en index.html, blog.html y portafolio.html
 - Nav con link a CV unificado en todas las paginas
-- font-family actualizado en styles.css a JetBrains Mono
+- Fuente volvio a Courier New (se descarto JetBrains Mono / Google Fonts)
+
+### Fase 6 - Responsive design
+- Media queries en styles.css para pantallas chicas (<600px)
+- Ajustes de font-size, padding, nav en columna
+- Blog sidebar pasa debajo de los posts en celular
+
+### Fase 7 - Estructura del blog
+- Carpeta Posts/ con un archivo HTML por post
+- blog.html convertido en indice con extractos y links a cada post
+- Sidebar con navegador de posts
+- Layout de dos columnas con CSS flexbox
+- Posts ordenados por fecha descendente
+- Carpeta Post-md/ para borradores en .md (excluida de git)
+
+### Fase 8 - Dark mode
+- Variables CSS para colores en :root y body.dark
+- script.js con toggle de tema usando classList.toggle
+- Preferencia guardada en localStorage (persiste entre paginas y sesiones)
+- Boton fijo abajo a la derecha con iconos planos (luna/sol)
 
 ## Pendiente
 
-### Fase 6 - Responsive design
-- Agregar media queries en styles.css para pantallas chicas (<600px)
-- Ajustar: font-size, padding, nav layout
-
-### Fase 7 - Estructura del blog
-- Crear carpeta posts/ con un archivo HTML por post
-- Mover el post a posts/me-aburri-de-consumir.html
-- blog.html pasa a ser un indice con links a cada post
-
-### Fase 8 - Dark mode
-- Crear script.js con toggle de tema
-- Variables CSS para colores
-- Boton de toggle en el nav
-- Guardar preferencia en localStorage
+(Sin fases planificadas por ahora)

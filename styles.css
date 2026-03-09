@@ -1,10 +1,31 @@
+/* === VARIABLES DE COLOR === */
+
+/* :root define variables globales que se reusan en todo el CSS.
+   Esto permite cambiar todos los colores del sitio desde un solo lugar */
+:root {
+    --color-bg: #ffffff;
+    --color-text: #1a1a1a;
+    --color-text-secondary: #666666;
+    --color-border: #e0e0e0;
+    --color-link: #1a1a1a;
+}
+
+/* Cuando el body tiene la clase "dark", se sobreescriben las variables */
+body.dark {
+    --color-bg: #1a1a1a;
+    --color-text: #e0e0e0;
+    --color-text-secondary: #999999;
+    --color-border: #333333;
+    --color-link: #e0e0e0;
+}
+
 /* === ESTILOS GENERALES === */
 
 /* body = todo el contenido visible de la pagina */
 body {
-    background-color: #ffffff;       /* fondo blanco */
-    font-family: "JetBrains Mono", monospace;  /* fuente monoespaciada */
-    color: #1a1a1a;                  /* texto casi negro (mas suave que negro puro) */
+    background-color: var(--color-bg);
+    font-family: "Courier New", monospace;
+    color: var(--color-text);
     max-width: 700px;                /* ancho maximo del contenido */
     margin: 0 auto;                  /* centrar el contenido horizontalmente */
     padding: 40px 20px;              /* espacio interno: arriba/abajo 40px, lados 20px */
@@ -48,7 +69,7 @@ p {
 /* === LINKS === */
 
 a {
-    color: #1a1a1a;                  /* mismo color que el texto */
+    color: var(--color-link);
     text-decoration: underline;      /* subrayado para que se note que es link */
 }
 
@@ -57,12 +78,12 @@ a {
 article {
     margin-bottom: 40px;             /* espacio entre articulos */
     padding-bottom: 24px;            /* espacio interno abajo */
-    border-bottom: 1px solid #e0e0e0; /* linea sutil de separacion */
+    border-bottom: 1px solid var(--color-border);
 }
 
 time {
     font-size: 0.85rem;              /* texto mas chico para la fecha */
-    color: #666666;                  /* gris para que no compita con el titulo */
+    color: var(--color-text-secondary);
     display: block;                  /* que ocupe su propia linea */
     margin-bottom: 12px;
 }
@@ -123,6 +144,25 @@ li {
 
 .blog-sidebar a:hover {
     text-decoration: underline;
+}
+
+/* === BOTON DARK MODE === */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    line-height: 1;                      /* evita que distintos iconos queden a alturas diferentes */
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-size: 1.6rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    opacity: 0.7;
 }
 
 /* === RESPONSIVE: PANTALLAS CHICAS === */
