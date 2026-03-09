@@ -17,10 +17,11 @@
 ### Fase 4 - GitHub Pages
 - Sitio publicado en https://mxgsr.github.io
 
-## En progreso - Fase 5: Tipografia y diseno
-- index.html ya tiene: Google Fonts (JetBrains Mono), nav unificado, footer
-- Falta: agregar Google Fonts y footer a blog.html y portafolio.html
-- Falta: actualizar font-family en styles.css a JetBrains Mono, agregar estilos de footer
+### Fase 5 - Tipografia y diseno
+- Google Fonts (JetBrains Mono) agregado a todas las paginas
+- Footer unificado en index.html, blog.html y portafolio.html
+- Nav con link a CV unificado en todas las paginas
+- font-family actualizado en styles.css a JetBrains Mono
 
 ## Pendiente
 
