@@ -77,6 +77,54 @@ li {
     margin-bottom: 8px;
 }
 
+/* === BLOG: LAYOUT DOS COLUMNAS === */
+
+/* El blog necesita mas ancho para acomodar posts + sidebar */
+.blog-page {
+    max-width: 960px;
+}
+
+.blog-layout {
+    display: flex;                       /* dos columnas lado a lado */
+    gap: 40px;                           /* espacio entre columnas */
+    max-width: 900px;                    /* mas ancho que el body normal */
+}
+
+/* Columna izquierda: los posts con extracto */
+.blog-posts {
+    flex: 1;                             /* ocupa todo el espacio disponible */
+}
+
+/* Columna derecha: navegador de posts */
+.blog-sidebar {
+    width: 200px;                        /* ancho fijo para la sidebar */
+    flex-shrink: 0;                      /* que no se achique */
+}
+
+.blog-sidebar h3 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.blog-sidebar ul {
+    list-style: none;                    /* sin bolitas */
+    padding-left: 0;
+}
+
+.blog-sidebar li {
+    margin-bottom: 12px;
+}
+
+.blog-sidebar a {
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.blog-sidebar a:hover {
+    text-decoration: underline;
+}
+
 /* === RESPONSIVE: PANTALLAS CHICAS === */
 
 /* Estos estilos solo aplican cuando el ancho de pantalla es menor a 600px (celulares) */
@@ -105,5 +153,14 @@ li {
 
     nav a {
         margin-right: 0;                /* ya no necesita margen lateral */
+    }
+
+    /* En celular la sidebar baja debajo de los posts */
+    .blog-layout {
+        flex-direction: column;
+    }
+
+    .blog-sidebar {
+        width: 100%;                    /* ocupa todo el ancho */
     }
 }
