@@ -129,7 +129,7 @@ li {
 }
 
 .blog-sidebar ul {
-    list-style: none;                    /* sin bolitas */
+    list-style: "→ ";                    /* listado con flechas */
     padding-left: 0;
 }
 
