@@ -188,6 +188,29 @@ th {
     font-weight: bold;
 }
 
+/* === PORTAFOLIO: TARJETAS DE REPOS === */
+
+.estado-carga {
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
+
+.repo-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+/* Tag del lenguaje de programacion */
+.repo-lenguaje {
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    color: var(--color-text-secondary);
+}
+
 /* === RESPONSIVE: PANTALLAS CHICAS === */
 
 /* Estos estilos solo aplican cuando el ancho de pantalla es menor a 600px (celulares) */
