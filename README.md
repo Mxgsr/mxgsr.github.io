@@ -1,1 +1,0 @@
-Proyecto en HTML de página web personal, tipo blog y portafolio.
