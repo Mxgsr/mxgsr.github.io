@@ -165,6 +165,29 @@ li {
     opacity: 0.7;
 }
 
+/* === TABLAS === */
+
+.table-wrapper {
+    overflow-x: auto;                    /* scroll horizontal en pantallas chicas */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;           /* bordes compartidos entre celdas */
+    margin-bottom: 16px;
+}
+
+th, td {
+    border: 1px solid var(--color-border);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-border);
+    font-weight: bold;
+}
+
 /* === RESPONSIVE: PANTALLAS CHICAS === */
 
 /* Estos estilos solo aplican cuando el ancho de pantalla es menor a 600px (celulares) */
