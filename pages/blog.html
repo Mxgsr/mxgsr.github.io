@@ -25,29 +25,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
+    <script>if(localStorage.getItem("tema")==="dark")document.documentElement.classList.add("dark");</script>
 </head>
 <body class="blog-page">
     <div class="scanlines"></div>
     <div class="container">
 
-        <header>
-            <div class="header-top">
-                <div class="logo">mx<span>/</span>gsr</div>
-                <div class="header-right">
-                    <div class="status">
-                        <span class="status-dot"></span>
-                        Chile
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="blog.html" class="active">Blog</a>
-            <a href="portafolio.html">Portafolio</a>
-            <a href="CV.html">Curriculum</a>
-        </nav>
+        <div id="site-header"></div>
+        <div id="site-nav"></div>
 
         <section class="fade-in">
             <p class="section-label">// blog</p>
@@ -96,18 +81,12 @@
 
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <span class="made-with">&copy; 2026 maxsoto.cl — hecho con curiosidad y café</span>
-                <pre class="footer-ascii">/\_/\
-  ( o.o )
-  > ^ <</pre>
-            </div>
-        </footer>
+        <div id="site-footer"></div>
 
     </div>
 
     <button id="theme-toggle" class="theme-toggle"></button>
+    <script src="../assets/components.js"></script>
     <script src="../assets/script.js"></script>
 </body>
 </html>

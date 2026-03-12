@@ -25,29 +25,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/styles.css">
+    <script>if(localStorage.getItem("tema")==="dark")document.documentElement.classList.add("dark");</script>
 </head>
 <body>
     <div class="scanlines"></div>
     <div class="container">
 
-        <header>
-            <div class="header-top">
-                <div class="logo">mx<span>/</span>gsr</div>
-                <div class="header-right">
-                    <div class="status">
-                        <span class="status-dot"></span>
-                        Santiago, Chile
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <nav>
-            <a href="../../index.html">Inicio</a>
-            <a href="../../pages/blog.html" class="active">Blog</a>
-            <a href="../../pages/portafolio.html">Portafolio</a>
-            <a href="../../pages/CV.html">Curriculum</a>
-        </nav>
+        <div id="site-header"></div>
+        <div id="site-nav"></div>
 
         <article class="post-content fade-in">
             <h1>Me cansé de consumir.</h1>
@@ -61,18 +46,12 @@
             <p>Creo que nos vendieron tan bien estas plataformas nos enganchamos a ellas porque se convirtieron en cierta forma en un tercer espacio y cuando vieron la posibilidad de exprimir cada molécula de nuestra atención destruyen todo lo anterior y crean un mall en tu teléfono del cuál ya es agotador participar. Me meto a Youtube y ya no veo el contenido que antes había, ya no sé entretenerme, y creo que este es mi punto de partida para reapropiarme de mi atención. Puede que sea otro intento fallido u otro proyecto que quede a la mitad pero no me importa. Al menos lo hice por el plot.</p>
         </article>
 
-        <footer>
-            <div class="footer-content">
-                <span class="made-with">&copy; 2025 maxsoto.cl — hecho con curiosidad y café</span>
-                <pre class="footer-ascii">  /\_/\
- ( o.o )
-  > ^ <</pre>
-            </div>
-        </footer>
+        <div id="site-footer"></div>
 
     </div>
 
     <button id="theme-toggle" class="theme-toggle"></button>
+    <script src="../../assets/components.js"></script>
     <script src="../../assets/script.js"></script>
 </body>
 </html>

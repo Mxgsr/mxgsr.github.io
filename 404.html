@@ -14,29 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles.css">
+    <script>if(localStorage.getItem("tema")==="dark")document.documentElement.classList.add("dark");</script>
 </head>
-<body>
+<body data-page="404">
     <div class="scanlines"></div>
     <div class="container">
 
-        <header>
-            <div class="header-top">
-                <div class="logo">mx<span>/</span>gsr</div>
-                <div class="header-right">
-                    <div class="status">
-                        <span class="status-dot"></span>
-                        Santiago, Chile
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <nav>
-            <a href="/index.html">Inicio</a>
-            <a href="/pages/blog.html">Blog</a>
-            <a href="/pages/portafolio.html">Portafolio</a>
-            <a href="/pages/CV.html">Curriculum</a>
-        </nav>
+        <div id="site-header"></div>
+        <div id="site-nav"></div>
 
         <div class="empty-state fade-in">
             <h1 class="section-title">404</h1>
@@ -44,18 +29,12 @@
             <a href="/" style="color: var(--accent); text-decoration: none; font-size: 0.85rem;">← Volver al inicio</a>
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <span class="made-with">&copy; 2025 maxsoto.cl — hecho con curiosidad y café</span>
-                <pre class="footer-ascii">  /\_/\
- ( o.o )
-  > ^ <</pre>
-            </div>
-        </footer>
+        <div id="site-footer"></div>
 
     </div>
 
     <button id="theme-toggle" class="theme-toggle"></button>
+    <script src="/assets/components.js"></script>
     <script src="/assets/script.js"></script>
 </body>
 </html>
