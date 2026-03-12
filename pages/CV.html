@@ -21,155 +21,211 @@
     <meta name="twitter:title" content="Curriculum - Maximiliano Soto">
     <meta name="twitter:description" content="Curriculum de Maximiliano Soto. Ingeniero comercial con experiencia en gestión de proyectos, innovación y análisis de datos.">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
+    <div class="scanlines"></div>
+    <div class="container">
 
-    <nav>
-        <strong> <a href="../index.html">Inicio</a></strong>
-        <strong><a href="blog.html">Blog</a></strong>
-        <strong><a href="portafolio.html">Portafolio</a></strong>
-        <strong><a href="CV.html">Curriculum</a></strong>
-    </nav>
+        <header>
+            <div class="header-top">
+                <div class="logo">mx<span>/</span>gsr</div>
+                <div class="header-right">
+                    <div class="status">
+                        <span class="status-dot"></span>
+                        Santiago, Chile
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <header>
-        <h1>Maximiliano Gabriel Soto Rojas</h1>
-        <p><strong>Ingeniero Comercial | Analista de Innovación y Proyectos</strong></p>
-        <p>
-            <a href="mailto:contactomxgsr.operate001@simplelogin.com">Email</a> |
-            <a href="https://linkedin.com/in/mxgsr" target="_blank" rel="noopener">LinkedIn</a>
-        </p>
-    </header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="blog.html">Blog</a>
+            <a href="portafolio.html">Portafolio</a>
+            <a href="CV.html" class="active">Curriculum</a>
+        </nav>
 
-    <section>
-        <h2>Perfil Profesional</h2>
-        <p>Ingeniero Comercial con trayectoria en gestión de proyectos sociales e innovación organizacional, especializado en el diseño e implementación de soluciones tecnológicas para la automatización de procesos internos. Combina experiencia en vinculación comunitaria y gestión territorial con competencias técnicas en programación (Python, Google Apps Script), análisis de datos y visualización (Looker Studio, Power BI). Actualmente en transición hacia roles de Data Engineering y Data Science, integrando visión de negocio con habilidades técnicas para generar impacto basado en datos.</p>
-    </section>
+        <section class="fade-in">
+            <h1 class="section-title">Maximiliano Gabriel Soto Rojas</h1>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.3rem;"><strong style="color: var(--text-primary);">Ingeniero Comercial | Analista de Innovación y Proyectos</strong></p>
+            <p style="font-size: 0.85rem; margin-bottom: 2rem;">
+                <a href="mailto:contactomxgsr.operate001@simplelogin.com" style="color: var(--accent); text-decoration: none;">Email</a> |
+                <a href="https://linkedin.com/in/mxgsr" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">LinkedIn</a>
+            </p>
+        </section>
 
-    <section>
-        <h2>Experiencia Profesional</h2>
+        <section class="cv-section fade-in">
+            <p class="section-label">// perfil</p>
+            <h2 class="section-title">Perfil Profesional</h2>
+            <p>Ingeniero Comercial con trayectoria en gestión de proyectos sociales e innovación organizacional, especializado en el diseño e implementación de soluciones tecnológicas para la automatización de procesos internos. Combina experiencia en vinculación comunitaria y gestión territorial con competencias técnicas en programación (Python, Google Apps Script), análisis de datos y visualización (Looker Studio, Power BI). Actualmente en transición hacia roles de Data Engineering y Data Science, integrando visión de negocio con habilidades técnicas para generar impacto basado en datos.</p>
+        </section>
 
-        <h3>Analista de Innovación y Proyectos — AVANZA Inclusión Socio-laboral</h3>
-        <time>Abr 2025 — Presente</time>
-        <ul>
-            <li>Diseñé y desarrollé un sistema automatizado de evaluación de desempeño utilizando Google Apps Script con arquitectura modular, permitiendo que equipos no técnicos actualicen parámetros sin intervención de código.</li>
-            <li>Automaticé la verificación de documentación de participantes mediante scripts que cruzan carpetas y registros en Excel, reduciendo tiempos de revisión manual.</li>
-            <li>Diseñé una matriz de priorización de vacantes para el equipo de inclusión laboral, optimizando la asignación de oportunidades.</li>
-            <li>Desarrollo de dashboard en Looker Studio con indicadores clave del proyecto Avanzamos Contigo.</li>
-            <li>Coordinador técnico y financiero del proyecto "Evaluamos para Avanzar", fondo Para Vivir Mejor del Ministerio de Desarrollo Social y Familia (folio N° 115527).</li>
-            <li>Co-autor de estudio publicado en revista académica Palimpsesto sobre derechos sexuales y reproductivos en programas de inclusión social.</li>
-        </ul>
+        <section class="cv-section fade-in">
+            <p class="section-label">// experiencia</p>
+            <h2 class="section-title">Experiencia Profesional</h2>
 
-        <h3>Atención al Cliente y Análisis de Productos — BC Liquor Distribution Branch</h3>
-        <time>Mar 2023 — Dic 2024</time>
-        <ul>
-            <li>Fortalecí relaciones con clientes diversos, aplicando estrategias de comunicación interpersonal que aumentaron la satisfacción y fidelización.</li>
-            <li>Analicé tendencias y comportamientos de consumo, proponiendo mejoras que incrementaron las ventas trimestrales en un 15%.</li>
-        </ul>
+            <div class="timeline">
+                <div class="timeline-entry">
+                    <p class="timeline-date">ABR 2025 — PRESENTE</p>
+                    <p class="timeline-role">Analista de Innovación y Proyectos</p>
+                    <p class="timeline-company">AVANZA Inclusión Socio-laboral</p>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Diseñé y desarrollé un sistema automatizado de evaluación de desempeño utilizando Google Apps Script con arquitectura modular, permitiendo que equipos no técnicos actualicen parámetros sin intervención de código.</li>
+                            <li>Automaticé la verificación de documentación de participantes mediante scripts que cruzan carpetas y registros en Excel, reduciendo tiempos de revisión manual.</li>
+                            <li>Diseñé una matriz de priorización de vacantes para el equipo de inclusión laboral, optimizando la asignación de oportunidades.</li>
+                            <li>Desarrollo de dashboard en Looker Studio con indicadores clave del proyecto Avanzamos Contigo.</li>
+                            <li>Coordinador técnico y financiero del proyecto "Evaluamos para Avanzar", fondo Para Vivir Mejor del Ministerio de Desarrollo Social y Familia (folio N° 115527).</li>
+                            <li>Co-autor de estudio publicado en revista académica Palimpsesto sobre derechos sexuales y reproductivos en programas de inclusión social.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <h3>Encargado de Operaciones y Ventas — La Interna SPA</h3>
-        <time>Jun 2022 — Dic 2024</time>
-        <ul>
-            <li>Desarrollé el Customer Journey identificando y segmentando instituciones de educación en salud en Chile.</li>
-            <li>Redacté informes y propuestas para postulación a fondos, asegurando precisión en la recopilación y organización de datos.</li>
-        </ul>
+                <div class="timeline-entry">
+                    <p class="timeline-date">MAR 2023 — DIC 2024</p>
+                    <p class="timeline-role">Atención al Cliente y Análisis de Productos</p>
+                    <p class="timeline-company">BC Liquor Distribution Branch</p>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Fortalecí relaciones con clientes diversos, aplicando estrategias de comunicación interpersonal que aumentaron la satisfacción y fidelización.</li>
+                            <li>Analicé tendencias y comportamientos de consumo, proponiendo mejoras que incrementaron las ventas trimestrales en un 15%.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <h3>Gestor de Proyectos — Fundación Superación Pobreza</h3>
-        <time>Feb 2021 — Nov 2022</time>
-        <ul>
-            <li>Diseñé y ejecuté estrategias de vinculación comunitaria con dirigentes y juntas vecinales para proyectos sociales, culturales y turísticos.</li>
-            <li>Coordiné mesas de trabajo entre instituciones públicas, privadas y comunitarias, implementando metodologías participativas.</li>
-        </ul>
+                <div class="timeline-entry">
+                    <p class="timeline-date">JUN 2022 — DIC 2024</p>
+                    <p class="timeline-role">Encargado de Operaciones y Ventas</p>
+                    <p class="timeline-company">La Interna SPA</p>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Desarrollé el Customer Journey identificando y segmentando instituciones de educación en salud en Chile.</li>
+                            <li>Redacté informes y propuestas para postulación a fondos, asegurando precisión en la recopilación y organización de datos.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <h3>Diseñador de Proyectos — Municipalidad de Curepto</h3>
-        <time>Feb 2020 — Dic 2020</time>
-        <ul>
-            <li>Representé al municipio en la Red de Municipios Sustentables del Maule, promoviendo proyectos de sostenibilidad regional.</li>
-            <li>Diseñé plan de gestión para la Casa de la Cultura y asesoré la elaboración del presupuesto municipal 2021.</li>
-        </ul>
-    </section>
+                <div class="timeline-entry">
+                    <p class="timeline-date">FEB 2021 — NOV 2022</p>
+                    <p class="timeline-role">Gestor de Proyectos</p>
+                    <p class="timeline-company">Fundación Superación Pobreza</p>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Diseñé y ejecuté estrategias de vinculación comunitaria con dirigentes y juntas vecinales para proyectos sociales, culturales y turísticos.</li>
+                            <li>Coordiné mesas de trabajo entre instituciones públicas, privadas y comunitarias, implementando metodologías participativas.</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <section>
-        <h2>Publicación</h2>
-        <p>Jaure, D., Robles, D., <strong>Soto, M.</strong>, &amp; Astroza, G. (2025). Percepciones que tienen las personas con discapacidad intelectual junto a sus familias sobre los derechos sexuales y reproductivos en los programas de inclusión social de AVANZA Inclusión. <em>Palimpsesto, 15</em>(27), 105-119.</p>
-    </section>
+                <div class="timeline-entry">
+                    <p class="timeline-date">FEB 2020 — DIC 2020</p>
+                    <p class="timeline-role">Diseñador de Proyectos</p>
+                    <p class="timeline-company">Municipalidad de Curepto</p>
+                    <div class="timeline-desc">
+                        <ul>
+                            <li>Representé al municipio en la Red de Municipios Sustentables del Maule, promoviendo proyectos de sostenibilidad regional.</li>
+                            <li>Diseñé plan de gestión para la Casa de la Cultura y asesoré la elaboración del presupuesto municipal 2021.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Educación</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Año</th>
-                        <th>Programa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2025</td>
-                        <td>Gestión de Proyectos (40 horas, SENCE)</td>
-                    </tr>
-                    <tr>
-                        <td>2022</td>
-                        <td>Diplomado en Desarrollo Local Inclusivo — Universidad Alberto Hurtado</td>
-                    </tr>
-                    <tr>
-                        <td>2021</td>
-                        <td>Diplomado en Desarrollo, Pobreza y Territorio — Universidad Alberto Hurtado</td>
-                    </tr>
-                    <tr>
-                        <td>2020</td>
-                        <td>Diplomado en Gestión Pública Regional — Universidad de Talca</td>
-                    </tr>
-                    <tr>
-                        <td>2013–2019</td>
-                        <td>Ingeniero Comercial — Universidad de Talca</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+        <section class="cv-section fade-in">
+            <p class="section-label">// publicación</p>
+            <h2 class="section-title">Publicación</h2>
+            <p>Jaure, D., Robles, D., <strong style="color: var(--text-primary);">Soto, M.</strong>, &amp; Astroza, G. (2025). Percepciones que tienen las personas con discapacidad intelectual junto a sus familias sobre los derechos sexuales y reproductivos en los programas de inclusión social de AVANZA Inclusión. <em>Palimpsesto, 15</em>(27), 105-119.</p>
+        </section>
 
-    <section>
-        <h2>Habilidades Técnicas</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Categoría</th>
-                        <th>Herramientas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Programación y Automatización</td>
-                        <td>Python, Google Apps Script, SQL (en aprendizaje), Git/GitHub</td>
-                    </tr>
-                    <tr>
-                        <td>Datos y Visualización</td>
-                        <td>Looker Studio, Power BI, Excel avanzado, Google Cloud (básico)</td>
-                    </tr>
-                    <tr>
-                        <td>Herramientas</td>
-                        <td>Inteligencia Artificial, Notion, Trello, Google Workspace</td>
-                    </tr>
-                    <tr>
-                        <td>Gestión</td>
-                        <td>Diseño de proyectos, comunicación territorial, investigación de mercado, presupuestos</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+        <section class="cv-section fade-in">
+            <p class="section-label">// educación</p>
+            <h2 class="section-title">Educación</h2>
 
-    <section>
-        <h2>Idiomas</h2>
-        <p><strong>Español:</strong> Nativo | <strong>Inglés:</strong> Bilingüe</p>
-    </section>
+            <div class="timeline">
+                <div class="timeline-entry">
+                    <p class="timeline-date">2025</p>
+                    <p class="timeline-role">Gestión de Proyectos (40 horas, SENCE)</p>
+                </div>
+                <div class="timeline-entry">
+                    <p class="timeline-date">2022</p>
+                    <p class="timeline-role">Diplomado en Desarrollo Local Inclusivo</p>
+                    <p class="timeline-company">Universidad Alberto Hurtado</p>
+                </div>
+                <div class="timeline-entry">
+                    <p class="timeline-date">2021</p>
+                    <p class="timeline-role">Diplomado en Desarrollo, Pobreza y Territorio</p>
+                    <p class="timeline-company">Universidad Alberto Hurtado</p>
+                </div>
+                <div class="timeline-entry">
+                    <p class="timeline-date">2020</p>
+                    <p class="timeline-role">Diplomado en Gestión Pública Regional</p>
+                    <p class="timeline-company">Universidad de Talca</p>
+                </div>
+                <div class="timeline-entry">
+                    <p class="timeline-date">2013 — 2019</p>
+                    <p class="timeline-role">Ingeniero Comercial</p>
+                    <p class="timeline-company">Universidad de Talca</p>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p> </p>
-    </footer>
+        <section class="cv-section fade-in">
+            <p class="section-label">// habilidades</p>
+            <h2 class="section-title">Habilidades Técnicas</h2>
+
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">Programación y Automatización</strong></p>
+            <div class="tags" style="margin-bottom: 1.2rem;">
+                <span class="tag">Python</span>
+                <span class="tag">Google Apps Script</span>
+                <span class="tag">SQL (en aprendizaje)</span>
+                <span class="tag">Git/GitHub</span>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">Datos y Visualización</strong></p>
+            <div class="tags" style="margin-bottom: 1.2rem;">
+                <span class="tag">Looker Studio</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">Excel avanzado</span>
+                <span class="tag">Google Cloud (básico)</span>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">Herramientas</strong></p>
+            <div class="tags" style="margin-bottom: 1.2rem;">
+                <span class="tag">Inteligencia Artificial</span>
+                <span class="tag">Notion</span>
+                <span class="tag">Trello</span>
+                <span class="tag">Google Workspace</span>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">Gestión</strong></p>
+            <div class="tags" style="margin-bottom: 1.2rem;">
+                <span class="tag">Diseño de proyectos</span>
+                <span class="tag">Comunicación territorial</span>
+                <span class="tag">Investigación de mercado</span>
+                <span class="tag">Presupuestos</span>
+            </div>
+        </section>
+
+        <section class="cv-section fade-in">
+            <p class="section-label">// idiomas</p>
+            <h2 class="section-title">Idiomas</h2>
+            <p><strong style="color: var(--text-primary);">Español:</strong> Nativo | <strong style="color: var(--text-primary);">Inglés:</strong> Bilingüe</p>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <span class="made-with">&copy; 2025 maxsoto.cl — hecho con curiosidad y café</span>
+                <pre class="footer-ascii">  /\_/\
+ ( o.o )
+  > ^ <</pre>
+            </div>
+        </footer>
+
+    </div>
 
     <button id="theme-toggle" class="theme-toggle"></button>
     <script src="../assets/script.js"></script>

@@ -16,49 +16,84 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://maxsoto.cl">
 
-    
-    
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Maximiliano Soto">
     <meta name="twitter:description" content="Página personal de Maximiliano Soto. Ingeniero comercial, eterno aprendiz y entusiasta de la tecnología.">
     -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+    <div class="scanlines"></div>
+    <div class="container">
 
+        <header>
+            <div class="header-top">
+                <div class="logo">mx<span>/</span>gsr</div>
+                <div class="header-right">
+                    <div class="status">
+                        <span class="status-dot"></span>
+                        Santiago, Chile
+                    </div>
+                </div>
+            </div>
+        </header>
 
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="pages/blog.html">Blog</a>
+            <a href="pages/portafolio.html">Portafolio</a>
+            <a href="pages/CV.html">Curriculum</a>
+        </nav>
 
-    <h1>Maximiliano Soto</h1>
+        <section class="fade-in">
+            <h1 class="hero-title">Maximiliano Soto<span class="cursor"></span></h1>
+            <p class="hero-subtitle">31 años, Chileno. Me considero un eterno aprendiz, buscando mi espacio en este caótico mundo de la web.</p>
+        </section>
 
-    <p>31 años, Chileno. Me considero un eterno aprendiz, buscando mi espacio en este caótico mundo de la web.</p>
+        <section class="fade-in">
+            <p class="section-label">// 01</p>
+            <h2 class="section-title">Sobre mi</h2>
 
-    <nav>
-        <strong><a href="index.html">Inicio</a></strong>
-        <strong><a href="pages/blog.html">Blog</a></strong>
-        <strong><a href="pages/portafolio.html">Portafolio</a></strong>
-        <strong><a href="pages/CV.html">Curriculum</a></strong>
-    </nav>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.85; margin-bottom: 1.2rem;">De profesión ingeniero comercial, me apasiona el mundo de la tecnología y el desarrollo de soluciones innovadoras. Aprendiendo nuevas habilidades acompañado de la IA. Trabajo en una organización que se dedica a la inclusión laboral de personas con discapacidad. Pero mi experiencia es amplia y variada.</p>
 
-    <h2>Sobre mi</h2>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.85; margin-bottom: 1.2rem;">Mis intereses son variados, soy ciclista, me gustan los deportes, los videojuegos y uno que otro pasatiempo geek. No tengo mascotas pero vivo con un gato llamado Fido que podrán ver por estos lados de vez en cuando.</p>
+        </section>
 
-    <p>De profesión ingeniero comercial, me apasiona el mundo de la tecnología y el desarrollo de soluciones innovadoras. Aprendiendo nuevas habilidades acompañado de la IA. Trabajo en una organización que se dedica a la inclusión laboral de personas con discapacidad. Pero mi experiencia es amplia y variada.</p>
+        <section class="fade-in" style="margin-top: 2.5rem;">
+            <p class="section-label">// 02</p>
+            <h2 class="section-title">Contacto</h2>
 
-    <p>Mis intereses son variados, soy ciclista, me gustan los deportes, los videojuegos y uno que otro pasatiempo geek. No tengo mascotas pero vivo con un gato llamado Fido que podrán ver por estos lados de vez en cuando.</p>
+            <div class="contact-links">
+                <a href="https://github.com/mxgsr" target="_blank" rel="noopener" class="card">
+                    <p class="contact-icon">GH</p>
+                    <p class="contact-name">GitHub</p>
+                </a>
+                <a href="https://linkedin.com/in/mxgsr" target="_blank" rel="noopener" class="card">
+                    <p class="contact-icon">LI</p>
+                    <p class="contact-name">LinkedIn</p>
+                </a>
+                <a href="mailto:contactomxgsr.operate001@simplelogin.com" class="card">
+                    <p class="contact-icon">EM</p>
+                    <p class="contact-name">Email</p>
+                </a>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.8rem;">Nota: el correo no es mi correo personal, por privacidad uso un alias para un primer contacto.</p>
+        </section>
 
-    <h2>Contacto</h2>
+        <footer>
+            <div class="footer-content">
+                <span class="made-with">&copy; 2025 maxsoto.cl — hecho con curiosidad y café</span>
+                <pre class="footer-ascii">  /\_/\
+ ( o.o )
+  > ^ <</pre>
+            </div>
+        </footer>
 
-    <p>Puedes encontrarme en:</p>
-
-    <ul>
-        <li><a href="https://github.com/mxgsr">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/mxgsr">LinkedIn</a></li>
-        <li><a href="mailto:contactomxgsr.operate001@simplelogin.com">Email</a></li>
-        <p>Nota: el correo no es mi correo personal, por privacidad uso un alias para un primer contacto.</p>
-    </ul>
-
-    <footer>
-        <p> </p>
-    </footer>
+    </div>
 
     <button id="theme-toggle" class="theme-toggle"></button>
     <script src="assets/script.js"></script>

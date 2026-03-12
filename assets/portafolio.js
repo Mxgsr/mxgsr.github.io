@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             if (propios.length === 0) {
-                contenedor.innerHTML = '<p>No hay proyectos públicos por ahora.</p>';
+                contenedor.innerHTML = '<div class="empty-state">No hay proyectos públicos por ahora.</div>';
                 return;
             }
 
@@ -38,49 +38,51 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(function () {
             // Si la API falla, mostrar fallback con link directo al perfil
             contenedor.innerHTML =
-                '<p>No se pudieron cargar los proyectos. ' +
-                '<a href="https://github.com/' + GITHUB_USER + '">Ver directamente en GitHub</a></p>';
+                '<div class="empty-state">No se pudieron cargar los proyectos. ' +
+                '<a href="https://github.com/' + GITHUB_USER + '" style="color: var(--accent);">Ver directamente en GitHub</a></div>';
         });
 });
 
 // Crea el elemento HTML de una tarjeta de proyecto
 function crearTarjeta(repo) {
-    var articulo = document.createElement("article");
+    var card = document.createElement("a");
+    card.className = "project-card";
+    card.href = repo.html_url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
 
-    // Nombre del repo como link
-    var titulo = document.createElement("h2");
-    var link = document.createElement("a");
-    link.href = repo.html_url;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = repo.name;
-    titulo.appendChild(link);
+    // Categoria (lenguaje o "Proyecto")
+    var categoria = document.createElement("p");
+    categoria.className = "project-category";
+    categoria.textContent = repo.language || "Proyecto";
+    card.appendChild(categoria);
 
-    // Descripcion (o texto por defecto)
+    // Nombre del repo
+    var nombre = document.createElement("p");
+    nombre.className = "project-name";
+    nombre.textContent = repo.name;
+    card.appendChild(nombre);
+
+    // Descripcion
     var descripcion = document.createElement("p");
+    descripcion.className = "project-desc";
     descripcion.textContent = repo.description || "Sin descripción";
+    card.appendChild(descripcion);
 
-    // Metadata: lenguaje + fecha
-    var meta = document.createElement("div");
-    meta.className = "repo-meta";
-
-    if (repo.language) {
-        var lenguaje = document.createElement("span");
-        lenguaje.className = "repo-lenguaje";
-        lenguaje.textContent = repo.language;
-        meta.appendChild(lenguaje);
+    // Stack / topics como tags
+    if (repo.topics && repo.topics.length > 0) {
+        var stack = document.createElement("div");
+        stack.className = "project-stack";
+        repo.topics.forEach(function (topic) {
+            var tag = document.createElement("span");
+            tag.className = "tag";
+            tag.textContent = topic;
+            stack.appendChild(tag);
+        });
+        card.appendChild(stack);
     }
 
-    var fecha = document.createElement("time");
-    fecha.dateTime = repo.updated_at;
-    fecha.textContent = "Actualizado: " + formatearFecha(repo.updated_at);
-    meta.appendChild(fecha);
-
-    articulo.appendChild(titulo);
-    articulo.appendChild(descripcion);
-    articulo.appendChild(meta);
-
-    return articulo;
+    return card;
 }
 
 // Formatea fecha ISO a formato legible (ej: "10 mar 2026")
