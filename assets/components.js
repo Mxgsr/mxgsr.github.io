@@ -81,7 +81,7 @@
         footer.innerHTML =
             "<footer>" +
                 '<div class="footer-content">' +
-                    '<span class="made-with">&copy; 2026 maxsoto.cl \u2014 hecho con curiosidad y caf\u00e9</span>' +
+                    '<span class="made-with">&copy; 2026 Maximiliano Soto \u2014 hecho con curiosidad y caf\u00e9</span>' +
                     '<pre class="footer-ascii">/\\_/\\\n ( o.o )\n  > ^ <</pre>' +
                 "</div>" +
             "</footer>";
